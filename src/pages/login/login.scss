@@ -1,0 +1,31 @@
+.lg{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10vh 0 0;
+}
+.lg-logo{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	// padding: .7rem;
+	border-radius: 5px;
+	background-image: linear-gradient(45deg, #ff393c 0%, color($colors, primary) 100%)
+}
+.lg-form{
+	width: 100vw;
+	.lg-send-valid-code {
+		align-self: flex-end;
+	}
+	.lg-form-submit{
+		margin-top: 15px;
+		box-shadow: none
+	}
+	.lg-form-forget-pwd {
+		margin-top: 15px;
+		color: color($colors, primary);
+	}
+}
+
+

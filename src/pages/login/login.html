@@ -1,0 +1,20 @@
+<ion-content>
+	<div class="lg" padding-top>
+		<div class="lg-logo">
+			logo
+		</div>
+		<form class="lg-form" padding>
+			<ion-item>
+				<ion-label floating>手机号</ion-label>
+				<ion-input [textMask]="{mask: phoneMask, guide: false}" name="phone" type="text" [(ngModel)]="phone"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label floating>验证码</ion-label>
+				<ion-input ></ion-input>
+				<button class="lg-send-valid-code" ion-button outline item-end>发送验证码</button>
+			</ion-item>
+			<button (click)="doSubmit($event)" [disabled]="!canSubmit" [color]="primary"  block ion-button class="lg-form-submit">登录</button>
+			<!-- <div text-center class="lg-form-forget-pwd">忘记密码?</div> -->
+		</form>
+	</div>
+</ion-content>
