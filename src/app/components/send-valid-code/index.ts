@@ -11,7 +11,7 @@ export class SendValidCodeCmp implements OnInit {
 	public seconds: number;
 	@Input()
 	public phone: string | boolean = false;
-	public remainder: Observable<number> = Observable.of(this.seconds) ;
+	public remainder: Observable<number>;
 	private isSending: boolean = false;
 
 	constructor(

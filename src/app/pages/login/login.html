@@ -13,7 +13,7 @@
 				<ion-input ></ion-input>
 				<wq-send-valid-code [seconds]="10" [phone]="isValidPhone ? normalPhone : false" item-end class="lg-send-valid-code"></wq-send-valid-code>
 			</ion-item>
-			<button (click)="doSubmit($event)" [disabled]="!canSubmit" [color]="primary"  block ion-button class="lg-form-submit">登录</button>
+			<button (click)="doLogin($event)" [disabled]="!canSubmit" [color]="primary"  block ion-button class="lg-form-submit">登录</button>
 			<!-- <div text-center class="lg-form-forget-pwd">忘记密码?</div> -->
 		</form>
 	</div>

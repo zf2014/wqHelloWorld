@@ -1,1 +1,5 @@
-<button ion-button outline small (click)="send()" [disabled]="!canTap">{{canTap || !remainder ? '发送验证码' : (remainder | async) +'秒后重新发送'}}</button>
+<button ion-button outline small (click)="send()" [disabled]="!canTap">
+	<span *ngIf="canTap; then thenBlock else elseBlock"></span>
+	<ng-template #thenBlock>发送验证码</ng-template>
+	<ng-template #elseBlock>{{ (remainder | async) || seconds }} 秒后重试</ng-template>
+</button>

@@ -49,16 +49,39 @@ $colors: (
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
+$background-ios-color: #f1f1f1;
 
+$button-ios-height: 3.2em;
 
+$list-ios-margin-bottom: 8px;
+$item-ios-padding-start: 0;
+$item-ios-avatar-size: 48px;
+
+$toolbar-ios-title-font-size: 16px;
+$toolbar-ios-height: 44px;
+$toolbar-ios-background: #fff;
+
+$tabs-ios-tab-min-height: 50px;
+$tabs-ios-tab-icon-size: 20px;
 
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
+$background-md-color: #f1f1f1;
 
-$button-md-height: 3.2em;
+$button-md-height: 44px;
+
+$list-md-margin-bottom: 8px;
 $item-md-padding-start: 0;
+$item-md-avatar-size: 48px;
+
+$toolbar-md-title-font-size: 16px;
+$toolbar-md-height: 44px;
+$toolbar-md-background: #fff;
+
+$tabs-md-tab-min-height: 50px;
+$tabs-md-tab-icon-size: 20px;
 
 
 

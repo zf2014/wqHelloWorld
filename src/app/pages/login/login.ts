@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { AlertController, IonicPage, NavController } from 'ionic-angular';
+import { AlertController, IonicPage, LoadingController, NavController } from 'ionic-angular';
 
 import { LoginService } from '../../service/login';
 
@@ -22,6 +22,7 @@ export class LoginPage {
 		public navCtrl: NavController,
 		public alterCtrl: AlertController,
 		private loginSev: LoginService,
+		public loadingCtrl: LoadingController,
 	) {}
 
 	public get canSubmit(): boolean {
@@ -33,10 +34,16 @@ export class LoginPage {
 	public get isValidPhone(): boolean {
 		return this.loginSev.validPhone(this.normalPhone);
 	}
-	public doSubmit() {
-		this.alterCtrl.create({
-			title: '提示框',
-			message: `您输入的手机号码是：${this.phone}`,
-		}).present();
+	public doLogin() {
+		const logining = this.loadingCtrl.create({
+			content: '正在登录...',
+		});
+		logining.present();
+		window.setTimeout(() => {
+			// TODO
+			logining.dismiss().then(() => {
+				this.navCtrl.push('tabs-page');
+			});
+		}, 3000);
 	}
 }

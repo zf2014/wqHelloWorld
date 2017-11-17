@@ -1,0 +1,23 @@
+// .mine-header {
+// 	border-bottom: 1px solid #eee; 
+// }
+.mine-content {
+	ion-list {
+		padding: 5px 0;
+		background: #fff;
+		> ion-item-group {
+			padding: 0 0 0 $content-padding;
+			border-bottom: 1px solid #eee;
+			&:last-child{
+				border-bottom: 0;
+			}
+		}
+		.mine-item-flag-icon {
+			margin-right: 16px;
+		}
+		.mine-item-quantity {
+			font-size: 14px;
+			color: #999;
+		}
+	}
+}
