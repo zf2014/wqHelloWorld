@@ -25,10 +25,13 @@ export class LoginPage {
 	) {}
 
 	public get canSubmit(): boolean {
-		return this.loginSev.validPhone(this.normalPhone);
+		return this.isValidPhone;
 	}
-	private get normalPhone() {
+	public get normalPhone() {
 		return this.phone.replace(/\s+/g, '');
+	}
+	public get isValidPhone(): boolean {
+		return this.loginSev.validPhone(this.normalPhone);
 	}
 	public doSubmit() {
 		this.alterCtrl.create({

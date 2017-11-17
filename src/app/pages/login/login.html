@@ -1,7 +1,7 @@
 <ion-content>
-	<div class="lg" padding-top>
+	<div class="lg">
 		<div class="lg-logo">
-			logo
+			<a>logo</a>
 		</div>
 		<form class="lg-form" padding>
 			<ion-item>
@@ -11,7 +11,7 @@
 			<ion-item>
 				<ion-label floating>验证码</ion-label>
 				<ion-input ></ion-input>
-				<button class="lg-send-valid-code" ion-button outline item-end>发送验证码</button>
+				<wq-send-valid-code [seconds]="10" [phone]="isValidPhone ? normalPhone : false" item-end class="lg-send-valid-code"></wq-send-valid-code>
 			</ion-item>
 			<button (click)="doSubmit($event)" [disabled]="!canSubmit" [color]="primary"  block ion-button class="lg-form-submit">登录</button>
 			<!-- <div text-center class="lg-form-forget-pwd">忘记密码?</div> -->

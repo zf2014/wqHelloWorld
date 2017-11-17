@@ -4,7 +4,7 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { CoreModule } from './core/core.module';
 
-import { LoginModule } from '../pages/login/login.module';
+import { LoginModule } from './pages/login/login.module';
 @NgModule({
 	declarations: [
 		MyApp,
