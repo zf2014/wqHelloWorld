@@ -2,20 +2,20 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { ShareModule } from '../../share/share.module';
 
-import { MinePage } from './mine';
+import { ProfilePage } from './profile';
 
 @NgModule({
 	declarations: [
-		MinePage,
+		ProfilePage,
 	],
 	imports: [
 		ShareModule,
-		IonicPageModule.forChild(MinePage),
+		IonicPageModule.forChild(ProfilePage),
 	],
 	entryComponents: [
-		MinePage,
+		ProfilePage,
 	],
 	providers: [
 	],
 })
-export class MineModule {}
+export class ProfileModule {}

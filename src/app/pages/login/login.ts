@@ -5,6 +5,7 @@ import { LoginService } from '../../service/login';
 
 @IonicPage({
 	name: 'login-page',
+	segment: 'login',
 })
 @Component({
 	selector: 'login',

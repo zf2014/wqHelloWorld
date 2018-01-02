@@ -2,16 +2,15 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage({
-	name: 'mine-page',
+	name: 'profile-page',
+	segment: 'profile',
 })
 @Component({
-	selector: 'mine',
-	templateUrl: 'mine.html',
+	templateUrl: 'profile.html',
 	encapsulation: ViewEncapsulation.None,
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MinePage {
-	public mineRoot = MinePage;
+export class ProfilePage {
 	constructor(
 		public navCtrl: NavController,
 	) {}

@@ -3,6 +3,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage({
 	name: 'home-page',
+	segment: 'home',
 })
 @Component({
 	selector: 'home',
